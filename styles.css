@@ -58,7 +58,8 @@ body {
     padding: 0px 20px;
 }
 
-.library__home span, .fa-book {
+.library__home span,
+.fa-book {
     font-size: 16px;
 }
 
@@ -67,11 +68,97 @@ body {
     padding: 0 20px 10px 20px;
 }
 
-.library a {
+.library .item, a {
     text-decoration: none;
     color: #b3b3b3;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 14px;
+    cursor: pointer;
 }
 
+.button-login {
+    display: flex;
+    position: fixed;
+    right: 0;
+    padding: 12px;
+    margin: 20px 20px 0 0;
+    border-radius: 12px;
+}
+
+.new-playlist {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #b3b3b3;
+    margin-top: 20px;
+    border-radius: 8px;
+
+}
+
+.new-playlist__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.new-playlist__content .title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.new-playlist__content .subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.new-playlist__content button {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    width: 120px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.cookies {
+    margin: 25px 20px;
+}
+
+.cookies a {
+    font-family: "DM Sans", sans-serif;
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.language {
+    margin: 25px 20px;
+}
+
+.language button {
+    background-color: transparent;
+    border: 1px solid #b3b3b3;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.language button span {
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
